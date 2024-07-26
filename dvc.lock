@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/images
+      hash: md5
+      md5: aea076040ce84b16bdb7cb1a20400311.dir
+      size: 336568419
+      nfiles: 13711
+    - path: train.py
+      hash: md5
+      md5: 1d7188bdceb00f629ae4d18bd5b6a30e
+      size: 1829
+    outs:
+    - path: model/xception_model.h5
+      hash: md5
+      md5: 22ae308a630d9aa7ef09597cdb1c733d
+      size: 86370448
